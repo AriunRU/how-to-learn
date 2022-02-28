@@ -1,5 +1,5 @@
-div {
-  border: 1px solid purple;
+a {
+  text-decoration: none;
 }
 .page {
   min-width: 1100px;
@@ -18,10 +18,10 @@ div {
   max-height: 756px;
   /* выше установили ограничения для секции */
   margin-bottom: 0;
+  display: flex;
   background-color: #f2f2f2;
-  /*display: flex;*/
   position: relative;
-  /*align-items:center;*/
+  z-index: -3;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -31,40 +31,14 @@ div {
   margin-right: 0;
   margin-top: 80px;
 }
-.logo {
-  display: flex;
-  width: 183px;
-  height: 32px;
-  background-image: url(../images/logo_place_header.svg);
-  background-repeat: no-repeat;
-}
-.logo_place_header {
-  margin: 30px 64px auto;
-  position: absolute;
-}
-.header__title {
-  position: absolute;
-  width: 730px;
-  line-height: 96px;
-  font-size: 102px;
-  padding-left: 64px;
-  align-items: center;
-  z-index: 2;
-}
-.header__subtitle{
-  line-height: 25px;
-  font-size: 18px;
-  width: 338px;
-  margin: 30px 64px auto;
-}
 .header__square-pic{
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-  right: 0;
   position: absolute;
-  z-index: 0;
   top: 64px;
+  right: 0;
+  z-index: -2;
 }
 .header__main-illustration{
   background-image: url(../images/header-image.png);
@@ -74,5 +48,76 @@ div {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 1;
+  z-index: -1;
+}
+.header__title {
+  display: flex;
+  align-items: baseline;
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  margin-left: 64px;
+  font-weight: bold;
+}
+.header__subtitle{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  width: 388px;
+  padding-bottom: 30px;
+  padding-left: 64px;
+  z-index: 2;
+}
+.logo {
+  width: 183px;
+  height: 32px;
+  background-image: url(../images/logo_place_header.svg);
+  background-repeat: no-repeat;
+}
+.logo_place_header {
+  position: absolute;
+  padding-top: 0;
+  padding-left: 0;
+  margin: 30px 64px auto;
+  z-index: 3;
+}
+.description{
+  margin: 100px auto;
+  position:relative;
+  display: flex;
+  justify-content: center;
+}
+.two-columns{
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  min-width: 784px;
+}
+.brief{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  width: 175px;
+  height: 100%;
+}
+.paragraph{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.span{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.main-text{
+  width: 80%;
+}
+.border{
+  border: 1px solid red;
 }
