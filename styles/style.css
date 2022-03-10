@@ -19,6 +19,7 @@ p, h1, h2, h3, h4, h5 h6 {
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+/*1 слайд Header*/
 .header {
   height: 100vh;
   min-height: 600px;
@@ -79,7 +80,7 @@ p, h1, h2, h3, h4, h5 h6 {
   left: 64px;
   z-index: 3;
 }
-/*Description*/
+/*2 слайд Description*/
 .description{
   margin: 100px auto;
   position: relative;
@@ -121,7 +122,7 @@ p, h1, h2, h3, h4, h5 h6 {
   align-items: center;
   flex-direction: column;
 }
-/*Tabel*/
+/*3 слайд Table*/
 .section-title{
   width: 60%;
   line-height: 1.15;
@@ -168,7 +169,7 @@ p, h1, h2, h3, h4, h5 h6 {
 .table__bank{
   margin-bottom: 0;
 }
-/*Feynman*/
+/*4 слайд Feynman*/
 .feynman{
   min-height: 890px;
   max-height: 890px;
@@ -207,7 +208,7 @@ p, h1, h2, h3, h4, h5 h6 {
   font-weight: normal;
   z-index: 1;
 }
-/*Kaufman*/
+/*5 слайд Kaufman*/
 .kaufman{
   display: flex;
   align-items: center;
@@ -270,7 +271,7 @@ p, h1, h2, h3, h4, h5 h6 {
   font-size: 18px;
   font-weight: normal;
 }
-/*Footer*/
+/*6 слайд Footer*/
 .footer{
   min-height: 350px;
   background-color: #1f1f1f;
