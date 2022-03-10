@@ -1,8 +1,9 @@
+/*p, a, h2, div{
+  border: 1px solid red;
+}*/
 a {
   text-decoration: none;
-}
-h2, p, div, section, header {
-  border: 1px solid red;
+  color: #2f80ed;
 }
 p, h1, h2, h3, h4, h5 h6 {
   margin: 0;
@@ -18,7 +19,6 @@ p, h1, h2, h3, h4, h5 h6 {
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
 .header {
   height: 100vh;
   min-height: 600px;
@@ -29,7 +29,6 @@ p, h1, h2, h3, h4, h5 h6 {
   flex-flow: row wrap;
   background-color: #f2f2f2;
   position: relative;
-  z-index: -3;
 }
 .header__square-pic{
   height: 568px;
@@ -38,7 +37,7 @@ p, h1, h2, h3, h4, h5 h6 {
   position: absolute;
   top: 64px;
   right: 0;
-  z-index: -2;
+  z-index: 1;
 }
 .header__main-illustration{
   background-image: url(../images/header-image.png);
@@ -48,7 +47,7 @@ p, h1, h2, h3, h4, h5 h6 {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: -1;
+  z-index: 2;
 }
 .header__title {
   align-self: center;
@@ -57,6 +56,7 @@ p, h1, h2, h3, h4, h5 h6 {
   font-size: 102px;
   margin-left: 64px;
   font-weight: bold;
+  z-index: 3;
 }
 .header__subtitle{
   position: absolute;
@@ -66,20 +66,20 @@ p, h1, h2, h3, h4, h5 h6 {
   font-size: 18px;
   font-weight: normal;
   width: 388px;
-  z-index: 2;
+  z-index: 3;
 }
 .logo {
   width: 183px;
   height: 32px;
-  background-image: url(../images/logo_place_header.svg);
-  background-repeat: no-repeat;
 }
 .logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
   left: 64px;
   z-index: 3;
 }
+/*Description*/
 .description{
   margin: 100px auto;
   position: relative;
@@ -121,6 +121,7 @@ p, h1, h2, h3, h4, h5 h6 {
   align-items: center;
   flex-direction: column;
 }
+/*Tabel*/
 .section-title{
   width: 60%;
   line-height: 1.15;
@@ -167,6 +168,7 @@ p, h1, h2, h3, h4, h5 h6 {
 .table__bank{
   margin-bottom: 0;
 }
+/*Feynman*/
 .feynman{
   min-height: 890px;
   max-height: 890px;
@@ -179,7 +181,6 @@ p, h1, h2, h3, h4, h5 h6 {
   background-size: 867px 637px;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -2;
 }
 .feynman__title{
   position: relative;
@@ -204,9 +205,9 @@ p, h1, h2, h3, h4, h5 h6 {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  text-decoration: none;
-  z-index: -1;
+  z-index: 1;
 }
+/*Kaufman*/
 .kaufman{
   display: flex;
   align-items: center;
@@ -217,7 +218,7 @@ p, h1, h2, h3, h4, h5 h6 {
   position: relative;
   z-index: -2;
 }
-.triangle{
+.kaufman__triangle{
   background-image: url(../images/kaufman-triangle.svg);
   background-size: cover;
   width: 877px;
@@ -269,22 +270,24 @@ p, h1, h2, h3, h4, h5 h6 {
   font-size: 18px;
   font-weight: normal;
 }
+/*Footer*/
 .footer{
   min-height: 350px;
   background-color: #1f1f1f;
   color: #ffffff;
   padding: 60px 40px;
   box-sizing: border-box;
-  z-index: -1;
+  display: flex;
+  justify-content: center;
 }
-.columns{
+.footer__columns{
   display:flex;
   flex-direction:row;
   position: relative;
   width:90%;
   justify-content: space-between;
 }
-.column__content_copyright{
+.footer__column_content_copyright{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -292,10 +295,7 @@ p, h1, h2, h3, h4, h5 h6 {
   flex-basis: 711px;
 }
 .logo__place_footer {
-  background-image: url(site.loc/images/logo_place_header.svg);
-  width: 183px;
-  height: 35px;
-  z-index: 1;
+  background-image: url(../images/logo_place_footer.svg);
 }
 .footer__author{
   margin: 18px 0;
@@ -303,7 +303,12 @@ p, h1, h2, h3, h4, h5 h6 {
   font-size:18px;
   font-weight: normal;
 }
-.column__content_info{
+.footer__column_content_info{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.footer__column_content_social{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -316,31 +321,36 @@ p, h1, h2, h3, h4, h5 h6 {
   margin-bottom: 20px;
 }
 .footer__column-links{
+  margin: 0 0 10px 0;
+}
+.footer__column-links_nowrap{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.column_link{
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  flex-wrap: nowrap;
+}
+.column-link_center{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.column-link_last{
+  margin-bottom: 16px;
 }
 .footer__social-icon{
-  display:flex;
-  flex-direction:row;
   width:16px;
   height:16px;
-  justify-content: space-between;
+  margin-right: 10px;
 }
 .footer__column-links_Instagram{
   background-image: url(../images/instagram_color_white.svg);
-  width: 16px;
-  height: 16px;
 }
 .footer__column-links_Facebook{
   background-image: url(../images/facebook_color_white.svg);
-  width: 16px;
-  height: 16px;
 }
 .footer__column-links_ВКонтакте{
   background-image: url(../images/vk_color_white.svg);
-  width: 16px;
-  height: 16px;
 }
 
