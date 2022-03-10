@@ -11,10 +11,10 @@
   <div class="page">
     <header class="header">
       <div class="logo logo_place_header"></div>
-      <p class="header__title">Научиться учиться</p>
-      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a href=# class="link">Узнать &rarr;</a></p>
       <div class="header__main-illustration" title="Опять двойка" alt="Опять двойка"></div>
       <div class="header__square-pic"></div>
+      <p class="header__title">Научиться учиться</p>
+      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a href="#">Узнать &rarr;</a></p>
     </header>
     <main class="content">
       <section class="description">
@@ -73,13 +73,13 @@
         <div class="feynman__img"></div>
         <h2 class="feynman__title">Метод Фейнмена</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <p class="feynman__link"><a href="#">Подробнее &rarr;</a></p>
+        <a href="#" class="feynman__link">Подробнее &rarr;</a>
       </section>
 
       <section class="kaufman">
         <h2 class="section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle_theme_dark">от Джоша Кауфмана</p>
-        <div class="triangle"></div>
+        <div class="kaufman__triangle"></div>
         <div class="table_theme_dark">
           <div class="table__cell_theme_dark">
             <h2 class="table__heading_theme_dark">1</h2>
@@ -125,40 +125,46 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="columns">
-      <div class="column__content_copyright">
-        <div class="logo__place_footer"></div>
+      <div class="footer__columns">
+      <div class="footer__column_content_copyright">
+        <div class="logo logo__place_footer"></div>
         <div class="footer__author">&copy; 2022 Кирилл Сидорков</div>
       </div>
-      <div class="column__content_info">
+      <div class="footer__column_content_info">
         <div class="footer__column-heading">О Практикуме</div>
         <div class="footer__column-links">
-          <p class="column-link">Главная</p>
-          <p class="column-link">Концепция</p>
-          <p class="column-link">Наставники</p>
+          <div class="column-link">Главная</div>
+          <div class="column-link column-link_center">Концепция</div>
+          <div class="column-link column-link_last">Наставники</div>
         </div>
       </div>
-      <div class="column__content_social">
-        <div class="footer__column-heading">Соцсети</div>
-        <div class="footer__column-links">
-          <a href="#">
-            <div class="footer__social-icon footer__social-icon_Facebook"></div>
-            <p>Facebook</p>
-          </a>
+        <div class="footer__column_content_social">
+          <div class="footer__column-heading">Соцсети</div>
+          <div class="footer__column-links footer__column-links_nowrap">
+            <a href="#">
+              <div class="footer__social-icon footer__column-links_Facebook"></div>
+            </a>
+            <a href="#">
+              <div class="column-link">Facebook</div>
+            </a>
+          </div>
+          <div class="footer__column-links footer__column-links_nowrap">
+            <a href="#">
+              <div class="footer__social-icon footer__column-links_ВКонтакте"></div>
+            </a>
+            <a href="#">
+              <div class="column-link">ВКонтакте</div>
+            </a>
+          </div>
+          <div class="footer__column-links footer__column-links_nowrap">
+            <a href="#">
+              <div class="footer__social-icon footer__column-links_Instagram"></div>
+            </a>
+            <a href="#">
+              <div class="column-link column-link_last">Instagram</div>
+            </a>
+          </div>
         </div>
-        <div class="footer__column-links">
-          <a href="#">
-            <div class="footer__social-icon footer__social-icon_ВКонтакте"></div>
-            <p>ВКонтакте</p>
-          </a>
-        </div>
-        <div class="footer__column-links">
-          <a href="#">
-            <div class="footer__social-icon footer__social-icon_Instagram"></div>
-            <p>Instagram</p>
-          </a>
-        </div>
-      </div>
       </div>
     </footer>
   </div>
