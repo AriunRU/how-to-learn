@@ -41,7 +41,6 @@ p, h1, h2, h3, h4, h5 h6 {
   z-index: 1;
 }
 .header__main-illustration{
-  background-image: url(../images/header-image.png);
   background-size: cover;
   height: 608px;
   width: 765px;
@@ -74,7 +73,6 @@ p, h1, h2, h3, h4, h5 h6 {
   height: 32px;
 }
 .logo_place_header {
-  background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
   left: 64px;
@@ -182,6 +180,7 @@ p, h1, h2, h3, h4, h5 h6 {
   background-size: 867px 637px;
   background-repeat: no-repeat;
   position: relative;
+
 }
 .feynman__title{
   position: relative;
@@ -220,7 +219,6 @@ p, h1, h2, h3, h4, h5 h6 {
   z-index: -2;
 }
 .kaufman__triangle{
-  background-image: url(../images/kaufman-triangle.svg);
   background-size: cover;
   width: 877px;
   height: 877px;
@@ -295,9 +293,9 @@ p, h1, h2, h3, h4, h5 h6 {
   justify-content: space-between;
   flex-basis: 711px;
 }
-.logo__place_footer {
+/*.logo__place_footer {
   background-image: url(../images/logo_place_footer.svg);
-}
+}*/
 .footer__author{
   margin: 18px 0;
   line-height: 25px;
@@ -345,7 +343,7 @@ p, h1, h2, h3, h4, h5 h6 {
   height:16px;
   margin-right: 10px;
 }
-.footer__column-links_Instagram{
+/*.footer__column-links_Instagram{
   background-image: url(../images/instagram_color_white.svg);
 }
 .footer__column-links_Facebook{
@@ -353,5 +351,5 @@ p, h1, h2, h3, h4, h5 h6 {
 }
 .footer__column-links_ВКонтакте{
   background-image: url(../images/vk_color_white.svg);
-}
+}*/
 
